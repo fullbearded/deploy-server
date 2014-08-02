@@ -1,0 +1,26 @@
+{
+    "name": "nginx",
+    "description": "web nginx",
+    "default_attributes": {
+        "nginx": {
+            "user": "www",
+            "group": "www",
+            "dir": "/usr/local/nginx/conf",
+            "pid": "/data/pids/nginx/nginx.pid",
+            "log_dir": "/data/logs/nginx",
+            "worker_processes": 5,
+            "source": {
+                "prefix": "/usr/local/nginx"
+            },
+            "gzip_static": "on",
+            "gzip_comp_level": 5
+        }
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[nginx::source]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "redis-server",
+    "description": "Redis Server",
+    "default_attributes": {
+        "redis": {
+            "log_dir": "/data/logs/redis",
+            "data_dir": "/data/data/redis",
+            "home_dir": "/usr/local/redis",
+            "pid_file": "/data/pids/redis/redis.pid",
+            "db_basename": "redis-server.rdb",
+            "server": {
+                "addr": "127.0.0.1"
+            }
+        }
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "chef-redis-server::default"
+    ],
+    "chef_type": "role"
+}

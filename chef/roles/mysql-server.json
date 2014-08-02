@@ -1,0 +1,21 @@
+{
+    "name": "mysql-server",
+    "description": "MySQL Server",
+    "default_attributes": {
+        "mysql": {
+            "allow_remote_root": false,
+            "client": {
+                "packages": ["mysql-client", "libmysqlclient-dev","ruby-mysql"]
+            },
+            "bind_address":"127.0.0.1",
+            "server_root_password": "123456",
+            "data_dir": "/data/data/mysql"
+        }
+    },
+    "json_class": "Chef::Role",
+    "run_list": [
+        "mysql::client",
+        "mysql::server"
+    ],
+    "chef_type": "role"
+}

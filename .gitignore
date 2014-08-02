@@ -1,0 +1,5 @@
+*.gitkeep
+chef/.idea/
+.idea/
+*.swp
+chef/nodes/*

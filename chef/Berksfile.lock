@@ -1,0 +1,62 @@
+DEPENDENCIES
+  build-essential
+  chef-redis-server
+    git: https://github.com/huhongda/chef-redis-server.git
+    revision: 601a3b53ed5b044644cc7bffa317b057031d8c34
+  memcached
+  mysql
+    git: git://github.com/opscode-cookbooks/mysql.git
+    revision: abf418550a534cee433ded5f85a85f3296a9709e
+  nginx
+  openssl
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  ruby_build
+  server-basic
+    path: site-cookbooks/server-basic
+  simple_iptables
+  yum
+
+GRAPH
+  apt (2.4.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.0.4)
+  chef-redis-server (0.0.3)
+    install_from (>= 0.0.0)
+  chef-sugar (2.0.0)
+  install_from (3.0.4)
+  java (1.25.0)
+  memcached (1.7.2)
+    runit (~> 1.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  mysql (5.3.6)
+    yum-mysql-community (>= 0.0.0)
+  nginx (2.7.4)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  ohai (2.0.1)
+  openssl (2.0.0)
+    chef-sugar (>= 0.0.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  rsyslog (1.12.2)
+  ruby_build (0.8.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  server-basic (0.0.1)
+  simple_iptables (0.6.5)
+  yum (3.2.2)
+  yum-epel (0.4.0)
+    yum (~> 3.0)
+  yum-mysql-community (0.1.10)
+    yum (>= 3.0)

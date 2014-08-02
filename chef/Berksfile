@@ -1,0 +1,24 @@
+site :opscode
+cookbook 'yum'
+cookbook 'openssl'
+cookbook 'build-essential' # this is development tool for centos, will install gcc+..
+cookbook 'simple_iptables'
+
+
+cookbook 'server-basic', path: 'site-cookbooks/server-basic'
+
+cookbook 'ruby_build'
+cookbook 'rbenv', github: 'fnichol/chef-rbenv'
+
+cookbook 'memcached'
+cookbook 'chef-redis-server', git: 'https://github.com/huhongda/chef-redis-server.git'
+
+cookbook 'nginx'
+
+cookbook 'mysql', github: 'opscode-cookbooks/mysql'
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{
+    "name": "server-base",
+    "description": "standart server configures",
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[yum]",
+        "recipe[openssl]",
+        "recipe[build-essential]",
+        "recipe[server-basic]"
+    ],
+    "chef_type": "role",
+    "override_attributes": {
+    }
+}
